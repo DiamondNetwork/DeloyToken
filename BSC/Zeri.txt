@@ -358,10 +358,10 @@ contract BEP20Token is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = "ATL Finance";
-    _symbol = "ATL";
+    _name = "Zeri NetWork";
+    _symbol = "ZERI";
     _decimals = 18;
-    _totalSupply = 1000000000000000000000000000;
+    _totalSupply = 10000 * 10**18;
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
@@ -599,6 +599,3 @@ contract BEP20Token is Context, IBEP20, Ownable {
     _approve(account, _msgSender(), _allowances[account][_msgSender()].sub(amount, "BEP20: burn amount exceeds allowance"));
   }
 }
-new 1.txt
-1
-Đang hiển thị new 1.txt.
